@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <title>DigLabSol-tt</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link href="favicon.ico" type="image/x-icon" rel="icon" />
+
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body class="page__body">
+    <header class="header">
+      <div class="header__menu--burger js-menu--open"></div>
+      <a class="header__logo" href="#">
+        <img src="../img/logotype.svg" alt="logotype"
+      /></a>
+      <button class="header__search"></button>
+    </header>
+    <nav class="header__nav nav mobileHide">
+      <div class="nav__header">
+        <img src="../img/logotype.svg" alt="logotype" />
+        <div class="header__menu header__menu--close js-menu--close"></div>
+      </div>
+      <ul class="nav__list">
+        <li class="nav__item">
+          <a class="nav__link">Demos</a>
+          <ul class="nav__submenu nav-submenu">
+            <li class="nav-submenu__item">Post Header</li>
+            <li class="nav-submenu__item">Post Layout</li>
+            <li class="nav-submenu__item">Share Buttons</li>
+            <li class="nav-submenu__item">Gallery Post</li>
+            <li class="nav-submenu__item">Video Post</li>
+          </ul>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link">Posts</a>
+          <ul class="nav__submenu nav-submenu">
+            <li class="nav-submenu__item">Post Header</li>
+            <li class="nav-submenu__item">Post Layout</li>
+            <li class="nav-submenu__item">Share Buttons</li>
+            <li class="nav-submenu__item">Gallery Post</li>
+            <li class="nav-submenu__item">Video Post</li>
+          </ul>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link">Features</a>
+          <ul class="nav__submenu nav-submenu">
+            <li class="nav-submenu__item">Post Header</li>
+            <li class="nav-submenu__item">Post Layout</li>
+            <li class="nav-submenu__item">Share Buttons</li>
+            <li class="nav-submenu__item">Gallery Post</li>
+            <li class="nav-submenu__item">Video Post</li>
+          </ul>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link">Categories</a>
+          <ul class="nav__submenu nav-submenu">
+            <li class="nav-submenu__item">Post Header</li>
+            <li class="nav-submenu__item">Post Layout</li>
+            <li class="nav-submenu__item">Share Buttons</li>
+            <li class="nav-submenu__item">Gallery Post</li>
+            <li class="nav-submenu__item">Video Post</li>
+          </ul>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link">Shop</a>
+          <ul class="nav__submenu nav-submenu">
+            <li class="nav-submenu__item">Post Header</li>
+            <li class="nav-submenu__item">Post Layout</li>
+            <li class="nav-submenu__item">Share Buttons</li>
+            <li class="nav-submenu__item">Gallery Post</li>
+            <li class="nav-submenu__item">Video Post</li>
+          </ul>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link">Buy Now</a>
+        </li>
+      </ul>
+    </nav>
+    <main class="main">
+      <div class="card">
+        <ul class="card__list"></ul>
+      </div>
+    </main>
+    <div class="layout hidden"></div>
+    <script type="module" src="./js/script.js"></script>
+    <template id="template">
+      <li class="card__item">
+        <picture class="card__picture">
+          <source class="card__source" srcset="" />
+          <img class="card__img" src="" alt="" />
+        </picture>
+        <p class="card__category"></p>
+        <h2 class="card__title"></h2>
+        <div class="card__post-meta post-meta">
+          <p class="post-meta__author"></p>
+          <p class="post-meta__date"></p>
+          <p class="post-meta__view"></p>
+        </div>
+        <p class="card__content"></p>
+      </li>
+    </template>
+  </body>
+</html>
