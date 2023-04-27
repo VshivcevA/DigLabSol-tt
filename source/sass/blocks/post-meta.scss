@@ -1,0 +1,28 @@
+.post-meta {
+  display: flex;
+  gap: 13px;
+  &__author {
+    font-weight: 500;
+    font-size: 1.2rem;
+    line-height: 12px;
+  }
+  &__date,
+  &__view {
+    font-weight: 400;
+    font-size: 1.2rem;
+    line-height: 12px;
+    color: $secondary;
+    position: relative;
+    &:before {
+      position: absolute;
+      content: "";
+      width: 3px;
+      height: 3px;
+      border-radius: 50%;
+      background-color: $secondary-light;
+      transform: translate(-100%, -50%);
+      top: 50%;
+      left: -5px;
+    }
+  }
+}

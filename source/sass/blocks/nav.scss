@@ -1,0 +1,84 @@
+.nav {
+  width: 320px;
+  height: 100%;
+  position: absolute;
+  z-index: 3;
+  top: 0;
+  left: 0;
+  background: $bg;
+  border-right: 1px solid $secondary-light;
+  //transition: transform 0.3s linear;
+  transition: all 0.3s linear;
+  margin-bottom: 3rem;
+  &.scroll-hide {
+    transform: translateY(-60px);
+  }
+  //todo надо скрыть от скринридеров
+  @media (max-width: $desktop) {
+    &.mobileHide {
+      transform: translateX(-320px);
+    }
+  }
+
+  @media (min-width: $desktop) {
+    display: block;
+    border: none;
+    width: 100%;
+    position: sticky;
+    top: 0;
+  }
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3.2rem 2rem 2.5rem;
+    border-bottom: 1px solid $secondary-light;
+    @media (min-width: $desktop) {
+      display: none;
+    }
+  }
+  &__list {
+    list-style: none;
+    padding: 0 2rem;
+    @media (min-width: $desktop) {
+      display: flex;
+      justify-content: center;
+      //gap: 46px;
+      border-top: 1px solid $secondary-light;
+      border-bottom: 1px solid $secondary-light;
+    }
+    & .nav__item:not(:last-child) {
+      border-bottom: 1px solid $secondary-light;
+      position: relative;
+      @media (min-width: $desktop) {
+        border: none;
+      }
+      & .nav__link:after {
+        position: absolute;
+        transform: translateY(40%);
+        padding-left: 1rem;
+        content: "";
+        width: 10px;
+        height: 10px;
+        background: url("../../img/arrow.svg") no-repeat center;
+      }
+    }
+  }
+  &__item {
+    cursor: pointer;
+    height: 100%;
+    font-size: 1.6rem;
+    padding: 1.6rem 0 1.6rem 0;
+    @media (min-width: $desktop) {
+      padding: 1.6rem 3.6rem 1.6rem 1rem;
+      &:hover {
+        .nav-submenu {
+          display: block;
+        }
+      }
+    }
+  }
+  &__link {
+    //
+  }
+}

@@ -1,0 +1,30 @@
+.nav-submenu {
+  display: none;
+  list-style: none;
+  position: absolute;
+  top: 100%;
+  z-index: 1;
+  background-color: $bg;
+  width: 176px;
+  padding: 2rem;
+  border: 1px solid $secondary-light;
+  &__item {
+    padding: 0.8rem;
+    &:after {
+      position: absolute;
+      transform: translateY(40%) rotate(-90deg);
+      right: 20px;
+      content: "";
+      width: 10px;
+      height: 10px;
+      background: url("../../img/arrow.svg") no-repeat center;
+    }
+    &:hover {
+      color: $secondary-light;
+      padding-left: 0.8rem;
+    }
+  }
+  & .nav-submenu__item:not(:last-child) {
+    border-bottom: 1px solid $secondary-light;
+  }
+}
