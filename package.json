@@ -2,6 +2,7 @@
   "name": "DigLabSol",
   "version": "1.0.0",
   "private": true,
+  "homepage": "https://vshivceva.github.io/DigLabSol-tt",
   "devDependencies": {
     "@htmlacademy/editorconfig-cli": "1.0.0",
     "autoprefixer": "10.4.13",
@@ -28,7 +29,8 @@
   },
   "scripts": {
     "dev": "gulp dev",
-    "build": "gulp buildProd"
+    "build": "gulp buildProd",
+    "deploy": "gh-pages -b master -d build"
   },
   "browserslist": [
     "last 2 versions",
@@ -50,6 +52,7 @@
   "type": "module",
   "dependencies": {
     "@squoosh/lib": "^0.4.0",
+    "gh-pages": "^5.0.0",
     "squoosh": "^0.0.0"
   }
 }
